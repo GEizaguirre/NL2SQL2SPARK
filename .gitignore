@@ -1,0 +1,10 @@
+db/*
+sample/
+*.db
+
+.env
+
+*.egg-info
+*__pycache__/
+
+sparkai-env/
