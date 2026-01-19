@@ -163,12 +163,12 @@ The `query_workflow.py` script outputs detailed performance metrics and accuracy
 You can use the `hitl-ui.py` script to run the workflow with your own natural language queries via the command line, while still benchmarking against a specific ground truth (Query ID) for context.
 
 ```bash
-python3 hitl-ui.py --id <QUERY_ID> --nl-query "<YOUR_QUERY>"
+python3 hitl-ui.py --id <QUERY_ID> --nl-query "<YOUR_QUERY>" --provider "<LLM_PROVIDER>"
 ```
 
 **Example:**
 ```bash
-python3 hitl-ui.py --id 2 --nl-query "Please list the zip code of all the charter schools in Fresno County Office of Education."
+python3 hitl-ui.py --id 2 --nl-query "Please list the zip code of all the charter schools in Fresno County Office of Education." --provider google
 ```
 
 This is useful for testing how different phrasings affect the generated SQL.
